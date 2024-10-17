@@ -1,5 +1,12 @@
-import { TextGenerateEffect } from "./TextGeneratorEffect";
+import { FaLocationArrow } from "react-icons/fa6";
+
 import { Spotlight } from "./ui/Spotlight";
+
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
+import MagicButton from "./ui/MagicButton";
+
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -13,14 +20,13 @@ const Hero = () => {
           className="top-10 left-full h-[80vh] w-[50vw] "
           fill="purple"
         />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-        <Spotlight className="top-48 left-40 h-[80vh] w-[50vw]" fill="red" />
-        <Spotlight className="top-68 left-60 h-[80vh] w-[50vw]" fill="green" />
-        <Spotlight className="top-88 left-20 h-[80vh] w-[50vw]" fill="yellow" />
-        <Spotlight
-          className="top-108 left-100 h-[80vh] w-[50vw]"
-          fill="orange"
+         <Spotlight
+          className="top-29 left-full h-[80vh] w-[50vw] "
+          fill="#17c3b2"
         />
+        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="red" />
+        <Spotlight className="top-48 left-40 h-[80vh] w-[50vw]" fill="#ffd500" />
+        <Spotlight className="top-98 left-20 h-[80vh] w-[50vw]" fill="yellow" />
       </div>
       <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2]  relativeflex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
@@ -33,30 +39,16 @@ const Hero = () => {
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="
-          We're building a seamless, interactive, and user-friendly web application using Next.js, React, and Tailwind CSS. Our team is dedicated to delivering exceptional user experiences and continuously improving our products."
+          We're building a seamless, interactive, and user-friendly web application using Next.js, React, and Tailwind CSS. Transforming Concepts into Seamless User Experience."
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg ld:text-2xl">
-            Hey, I&apos;m Muhammad, a next.js developer
-            and I&apos;m here to help you build your next web magic! Contact me if you need help with your project or have any questions.
-            <br />
-            <a href="mailto:m.tayyab1263@gmail.com" className="text-blue-500 hover:text-white">
-              Contact Us
-            </a>
-            <br />
-            <a href="" className="text-blue-500 hover:text-white">
-              Source Code
-            </a>
-            <br />
-            <a href="https://www.instagram.com/grow_wid_muhammad/" className="text-blue-500 hover:text-white">
-              Instagram
-            </a>
-            <br />
-            <a href="https://www.linkedin.com/in/muhammad-tayyab-9bbba9266/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzudVJkO0RJyKlhIdG%2BChBA%3D%3D" className="text-blue-500 hover:text-white">
-              LinkedIn
-            </a>
-            <br />
-            <a href="" className="text-blue-500 hover:text-white">Twitter</a>
+            Hey, I&apos;m Muhammad, a next.js developer and I&apos;m here to
+            help you build your next web magic! Contact me if you need help with
+            your project or have any questions.
           </p>
+          <a href="#">
+  <MagicButton title="Show my Work" icon={<FaLocationArrow />} position='right'/>
+</a>
         </div>
       </div>
     </div>
